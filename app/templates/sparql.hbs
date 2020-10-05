@@ -1,15 +1,14 @@
-<h1>Centrale Vindplaats: SPARQL</h1>
-
-{{#if this.fastboot.isFastBoot}}
-  ... waiting for page to become interactive ...
-{{else}}
 <div class="au-o-layout au-o-layout--large">
   <div class="au-o-region-large">
-    <AuHeading level="1" skin="1" class="au-u-margin-bottom">Centrale Vindplaats: SPARQL</AuHeading>
-    <p>Gebruik queries om informatie te doorzoeken die ontsloten werd in onder andere notulen, besluiten en codelijsten.</p>
-    <div {{yasgui}}></div>
+    <AuHeading @level="1" @skin="1" class="au-u-margin-bottom">Centrale Vindplaats: SPARQL</AuHeading>
+    {{#if this.fastboot.isFastBoot}}
+      <AuHeading @level="2" @skin="4">Aan het laden </AuHeading>
+      <AuLoader />
+    {{else}}
+      <p>Gebruik queries om informatie te doorzoeken die ontsloten werd in onder andere notulen, besluiten en codelijsten.</p>
+      <div {{yasgui}}></div>
+      {{!-- <AuHr /> --}}
+      {{outlet}}
+    {{/if}}
   </div>
-  {{!-- <AuHr /> --}}
-  {{outlet}}
 </div>
-{{/if}}
