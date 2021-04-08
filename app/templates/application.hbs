@@ -1,10 +1,11 @@
 <AuMainHeader @brandLink="{{unless session.isAuthenticated "https://www.vlaanderen.be/nl"}}" @homeRoute="index" @appTitle="De Centrale Vindplaats &mdash; Ontdek gestructureerde informatie in notulen, besluiten, codelijsten en meer.">
 </AuMainHeader>
 
+<main id="main" class="au-c-main-container" tabindex="-1">
 
-<main id="main" class="au-c-main-container">
+{{!-- <main id="main" class="au-c-main-container">
   <div class="au-c-main-container__content au-c-main-container__content--scroll" id="content">
-    <div>{{outlet}}</div>
+    <div> --}}{{outlet}}{{!-- </div>
     <AuMainFooter>
       <AuHeading @level="3" @skin="4">
         De Centrale Vindplaats is een officiële website van de Vlaamse overheid
@@ -25,4 +26,6 @@
       </AuContent>
     </AuMainFooter>
   </div>
+</main> --}}
+
 </main>

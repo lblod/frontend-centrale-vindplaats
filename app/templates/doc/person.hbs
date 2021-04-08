@@ -1,0 +1,33 @@
+<div class="au-c-main-container__sidebar au-u-hide-on-print">
+  <div class="au-c-sidebar">
+    <div class="au-c-sidebar__content">
+      <nav>
+        <ul class="au-c-list-navigation">
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.person">
+              <AuIcon @icon="documents" @alignment="left" />
+              Something
+            </AuNavigationLink>
+          </li>
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.person">
+              <AuIcon @icon="draft" @alignment="left" />
+              Veranderingsgebeurtenissen
+            </AuNavigationLink>
+          </li>
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.person">
+              <AuIcon @icon="bin" @alignment="left" />
+              More
+            </AuNavigationLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<div id="content" class="au-c-main-container__content au-u-wide-on-print" tabindex="-1">
+  <div class="au-o-layout">
+    {{outlet}}
+  </div>
+</div>

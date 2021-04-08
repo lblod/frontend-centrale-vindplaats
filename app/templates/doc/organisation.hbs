@@ -1,0 +1,333 @@
+<div class="au-c-main-container__sidebar">
+  <div class="au-c-sidebar">
+    <div class="au-c-sidebar__content">
+      <nav>
+        <ul class="au-c-list-navigation">
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.organisation">
+              <AuIcon @icon="documents" @alignment="left" />
+              Kerngegevens
+            </AuNavigationLink>
+          </li>
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.organisation.mandatories">
+              <AuIcon @icon="draft" @alignment="left" />
+              Veranderingsgebeurtenissen
+            </AuNavigationLink>
+          </li>
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.organisation.mandatories">
+              <AuIcon @icon="draft" @alignment="left" />
+              Vestigingen
+            </AuNavigationLink>
+          </li>
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.organisation.mandatories">
+              <AuIcon @icon="draft" @alignment="left" />
+              Rollen - Hoedanigheden
+            </AuNavigationLink>
+          </li>
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.organisation.mandatories">
+              <AuIcon @icon="draft" @alignment="left" />
+              Mandatarissen
+            </AuNavigationLink>
+          </li>
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.organisation.mandatories">
+              <AuIcon @icon="draft" @alignment="left" />
+              Verbonden entiteiten
+            </AuNavigationLink>
+          </li>
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.organisation.mandatories">
+              <AuIcon @icon="draft" @alignment="left" />
+              Dossiers
+            </AuNavigationLink>
+          </li>
+          <li class="au-c-list-navigation__item">
+            <AuNavigationLink @linkRoute="doc.organisation.mandatories">
+              <AuIcon @icon="draft" @alignment="left" />
+              Besluiten
+            </AuNavigationLink>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<div class="au-c-main-container__content" tabindex="-1" id="content">
+  <div class="au-c-body-container">
+    <AuToolbar @size="medium" @skin="tint" @border="bottom" class="au-c-toolbar__breadcrumbs">
+      <AuToolbarGroup>
+        <ul class="au-c-list-horizontal">
+          <li class="au-c-list-horizontal__item">
+            <AuLink @linkRoute="doc">
+              <AuIcon @icon="arrow-left" @alignment="left" />
+              Zoeken
+            </AuLink>
+          </li>
+          <li class="au-c-list-horizontal__item">
+            <AuLink>Organisaties</AuLink>
+          </li>
+          <li class="au-c-list-horizontal__item">
+            <strong>Gemeente Hasselt</strong>
+          </li>
+        </ul>
+      </AuToolbarGroup>
+    </AuToolbar>
+
+    <div class="au-c-body-container au-c-body-container--scroll">
+      <AuToolbar @size="large">
+        <AuToolbarGroup>
+          <AuHeading @level="1" @skin="2">
+            <AuPill>
+              Organisatie: Bestuur
+            </AuPill>
+            <br>
+            Gemeente Hasselt
+          </AuHeading>
+        </AuToolbarGroup>
+        <AuToolbarGroup>
+        </AuToolbarGroup>
+      </AuToolbar>
+
+      <div class="au-o-box">
+        <div class="au-o-flow">
+
+          <div class="au-o-box au-o-box--flush">
+            <AuHeading @level="2" @skin="4" class="au-u-margin-bottom-tiny">
+              Algemene gegevens
+            </AuHeading>
+
+            <div class="au-o-box au-o-box--alt">
+
+              <div class="au-o-grid">
+                <div class="au-o-grid__item au-u-1-2">
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Naam (titel)
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      Gemeente Hasselt
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Type entiteit
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      Gemeente
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Status
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      <AuPill>Actief</AuPill>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="au-o-grid__item au-u-1-2">
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Unieke naam
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      G_HASSELT_L
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        KBO nummer
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      0207451227
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        NIScode
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      44021
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        URI
+                      </strong>
+                      <AuHelpText>Uniform Resource Identifier</AuHelpText>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      <a href="http://data.lblod.info/id/bestuurseenheden/353234a365664e581db5c2f7cc07add2534b47b8e1ab87c821fc6e6365e6bef5" target="_blank" rel="noreferrer nooopener" class="au-u-word-break">http://data.lblod.info/id/bestuurseenheden/353234a365664e581db5c2f7cc07add2534b47b8e1ab87c821fc6e6365e6bef5</a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="au-o-box au-o-box--flush">
+            <AuHeading @level="2" @skin="4" class="au-u-margin-bottom-tiny">
+              Algemeen adres &amp; contactgegevens
+            </AuHeading>
+
+            <div class="au-o-box au-o-box--alt">
+
+              <div class="au-o-grid">
+                <div class="au-o-grid__item au-u-1-2">
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Straat en huisnummer
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      Limburgplein 1
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Postcode
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      3500
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Gemeente
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      Hasselt
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Provincie
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      Limburg
+                    </div>
+                  </div>
+                </div>
+
+                <div class="au-o-grid__item au-u-1-2">
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Telefoonnummer
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      011 23 90 00
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Mailadres
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      info@hasselt.be
+                    </div>
+                  </div>
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Website
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      https://www.hasselt.be/
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="au-o-box au-o-box--flush">
+            <AuHeading @level="2" @skin="4" class="au-u-margin-bottom-tiny">
+              Gerelateerde entiteiten
+            </AuHeading>
+
+            <div class="au-o-box au-o-box--alt">
+
+              <div class="au-o-grid">
+                <div class="au-o-grid__item au-u-1-2">
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        Provinciebestuur
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      Provincie Limburg
+                    </div>
+                  </div>
+                </div>
+
+                <div class="au-o-grid__item au-u-1-2">
+
+                  <div class="au-o-grid">
+                    <div class="au-o-grid__item au-u-1-2 au-u-1-3@medium">
+                      <strong>
+                        OCMW
+                      </strong>
+                    </div>
+                    <div class="au-o-grid__item au-u-1-2 au-u-2-3@medium">
+                      OCMW Hasselt
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
