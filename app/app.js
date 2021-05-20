@@ -7,16 +7,12 @@ export default class App extends Application {
   modulePrefix = config.modulePrefix;
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver;
-
-  constructor() {
-    super(...arguments);
-    this.engines = {
-      "ember-jobs-dashboard": {
-        dependencies: {
-          services: [
-            'store'
-          ]
-        }
+  engines = {
+    "ember-jobs-dashboard": {
+      dependencies: {
+        services: [
+          'store'
+        ]
       }
     }
   }
