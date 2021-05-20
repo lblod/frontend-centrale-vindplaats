@@ -51,7 +51,7 @@
     "ember-engines": "^0.8.14",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^7.0.1",
-    "ember-jobs-dashboard": "*",
+    "ember-jobs-dashboard": "file:.yalc/ember-jobs-dashboard",
     "ember-load-initializers": "^2.1.1",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-modifier": "^1.0.3",
@@ -70,6 +70,9 @@
     "sass": "^1.21.0",
     "svgxuse": "^1.2.6"
   },
+   "fastbootDependencies": [
+    "moment"
+  ],
   "engines": {
     "node": "10.* || >= 12"
   },
