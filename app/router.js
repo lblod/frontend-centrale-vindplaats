@@ -9,7 +9,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.mount('ember-jobs-dashboard', { as: "jobs" });
+  this.mount('ember-jobs-dashboard', { path: '/jobs' });
   this.route('sparql');
   this.route("view", function() {}),
   metisFallbackRoute(this);

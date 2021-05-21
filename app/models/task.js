@@ -1,12 +1,12 @@
-import Model, { attr, belongsTo, hasMany }  from '@ember-data/model';
+import Model, { attr, belongsTo, hasMany } from '@ember-data/model';
 
 export default class TaskModel extends Model {
-  @attr('string') uri;
-  @attr('string') status;
+  @attr uri;
+  @attr status;
   @attr('date') created;
   @attr('date') modified;
-  @attr('string') operation;
-  @attr('string') index;
+  @attr operation;
+  @attr index;
 
   @belongsTo('job-error') error;
   @belongsTo('job') job;
@@ -23,10 +23,10 @@ export default class TaskModel extends Model {
     'http://redpencil.data.gift/id/concept/JobStatus/scheduled': 'scheduled',
     'http://redpencil.data.gift/id/concept/JobStatus/success': 'success',
     'http://redpencil.data.gift/id/concept/JobStatus/failed': 'failed',
-    'http://redpencil.data.gift/id/concept/JobStatus/canceled': 'canceled'
+    'http://redpencil.data.gift/id/concept/JobStatus/canceled': 'canceled',
   };
 
-  get shortStatus(){
+  get shortStatus() {
     return this.statusesMap[this.status];
   }
 }
