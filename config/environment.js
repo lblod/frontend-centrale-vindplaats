@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'frontend-centrale-vindplaats',
     environment,
@@ -8,15 +8,15 @@ module.exports = function(environment) {
     locationType: 'auto',
     metis: {
       routes: {},
-      baseUrl: '{{METIS_BASE_URL}}'
+      baseUrl: '{{METIS_BASE_URL}}',
     },
     yasgui: {
       // NOTE: look at app/modifiers/yasgui.js when changing this variable
-      defaultQuery: "{{YASGUI_DEFAULT_QUERY}}",
-      extraPrefixes: "{{YASGUI_EXTRA_PREFIXES}}"
+      defaultQuery: '{{YASGUI_DEFAULT_QUERY}}',
+      extraPrefixes: '{{YASGUI_EXTRA_PREFIXES}}',
     },
     fastboot: {
-      hostWhitelist: [/^localhost(:[0-9]*)?/, "localhost",  /^.*$/ ] //TODO: this is potentialy a danger, FIX THIS
+      hostWhitelist: [/^localhost(:[0-9]*)?/, 'localhost', /^.*$/], //TODO: this is potentialy a danger, FIX THIS
     },
     EmberENV: {
       FEATURES: {
@@ -25,14 +25,14 @@ module.exports = function(environment) {
       },
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
-        Date: false
-      }
+        Date: false,
+      },
     },
 
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
-    }
+    },
   };
 
   if (environment === 'development') {
