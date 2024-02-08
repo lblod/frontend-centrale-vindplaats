@@ -3,10 +3,11 @@ FROM madnificent/ember:3.28.5 as builder
 LABEL maintainer="info@redpencil.io"
 
 WORKDIR /app
-COPY package.json .
-RUN npm install --legacy-peer-deps
+COPY package.json package-lock.json ./
+RUN npm ci
+
 COPY . .
-RUN ember build -prod
+RUN npm run build
 
 FROM semtech/ember-proxy-service:1.5.1
 
