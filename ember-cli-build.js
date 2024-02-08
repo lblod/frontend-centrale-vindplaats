@@ -23,7 +23,6 @@ module.exports = function (defaults) {
   // along with the exports of each module as its value.
 
   app.import('node_modules/@triply/yasgui/build/yasgui.min.css');
-  app.import('node_modules/svgxuse/svgxuse.js');
 
   return app.toTree();
 };
