@@ -26,10 +26,12 @@
     "test:ember": "ember test"
   },
   "overrides": {
-    "inputmask": "^5.0.9-beta.45"
+    "inputmask": "^5.0.9-beta.45",
+    "ember-intl": "$ember-intl"
   },
   "overridesComments": {
-    "inputmask": "5.0.8 has some code that isn't compatible with FastBoot, but it wasn't released in a stable release yet.."
+    "inputmask": "5.0.8 has some code that isn't compatible with FastBoot, but it wasn't released in a stable release yet..",
+    "ember-intl": "metis depends on v5, but there weren't any breaking API changes between 5 and 6, so we can install the newer version here"
   },
   "devDependencies": {
     "@appuniversum/ember-appuniversum": "^2.18.0",
@@ -53,6 +55,7 @@
     "ember-cli-terser": "^4.0.2",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.1.1",
+    "ember-intl": "^6.4.0",
     "ember-load-initializers": "^2.1.2",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-modifier": "^3.2.7",
