@@ -25,14 +25,18 @@
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test"
   },
+  "overrides": {
+    "@appuniversum/ember-appuniversum": "$@appuniversum/ember-appuniversum"
+  },
+  "overridesComments": {
+    "@appuniversum/ember-appuniversum": "metis has a peerDep on 0.11 which isn't compatible, but it also lists a devDep of v1, so that seems to be a mistake"
+  },
   "devDependencies": {
-    "@appuniversum/appuniversum": "^0.0.14",
-    "@appuniversum/ember-appuniversum": "0.0.30",
+    "@appuniversum/ember-appuniversum": "^1.10.0",
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
     "@glimmer/component": "^1.0.4",
     "@glimmer/tracking": "^1.0.4",
-    "@lblod/ember-vo-webuniversum": "^0.22.8",
     "@triply/yasgui": "^4.0.114",
     "babel-eslint": "^10.1.0",
     "broccoli-asset-rev": "^3.0.0",
@@ -69,7 +73,7 @@
     "eslint-plugin-prettier": "^3.4.1",
     "eslint-plugin-qunit": "^6.2.0",
     "loader.js": "^4.7.0",
-    "metis": "github:redpencilio/ember-metis#v0.3.2",
+    "metis": "github:redpencilio/ember-metis#v0.5.1",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.5.1",
     "qunit": "^2.17.2",
