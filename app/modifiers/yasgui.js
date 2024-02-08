@@ -14,12 +14,15 @@ SELECT DISTINCT ?type WHERE {
 } LIMIT 10
 `;
 
-export default modifier(function yasgui(element /*, params, hash*/) {
-  const yasgui = new Yasgui(element, {
-    requestConfig: { endpoint: '/sparql' },
-    autofocus: true,
-  });
-  yasgui.config.yasqe.value = defaultQuery;
-  if (env.yasgui.extraPrefixes !== '{{YASGUI_EXTRA_PREFIXES}}')
-    yasgui.config.yasqe.addPrefixes(JSON.parse(env.yasgui.extraPrefixes));
-});
+export default modifier(
+  function yasgui(element /*, params, hash*/) {
+    const yasgui = new Yasgui(element, {
+      requestConfig: { endpoint: '/sparql' },
+      autofocus: true,
+    });
+    yasgui.config.yasqe.value = defaultQuery;
+    if (env.yasgui.extraPrefixes !== '{{YASGUI_EXTRA_PREFIXES}}')
+      yasgui.config.yasqe.addPrefixes(JSON.parse(env.yasgui.extraPrefixes));
+  },
+  { eager: false }
+);
