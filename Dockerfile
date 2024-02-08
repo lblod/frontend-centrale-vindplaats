@@ -1,10 +1,10 @@
-FROM madnificent/ember:3.17.0 as builder
+FROM madnificent/ember:3.28.5 as builder
 
 LABEL maintainer="info@redpencil.io"
 
 WORKDIR /app
 COPY package.json .
-RUN npm install
+RUN npm install --legacy-peer-deps
 COPY . .
 RUN ember build -prod
 
