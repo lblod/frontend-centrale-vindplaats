@@ -3,61 +3,7 @@
    Very specific css and temporary css.
    ========================================================================== */
 
-.word-break--break-all,
-.data-table td {
-	word-break: break-word;
-}
-
-.h1 a {
-	text-decoration: initial;
-}
-
-dt {
-	font-weight: bold;
-}
-
-.temporary-header__name {
-	padding-top: 1.2rem;
-	margin-top: 0.2rem;
-}
-
-.content-header {
-	min-height: 16rem;
-}
-
-.placeholder-picture {
-	background-color: whitesmoke;
-	border: 1px solid lightgray;
-	height: 25rem;
-	width: 100%;
-	margin-bottom: 1rem;
-}
-
-.typography i.fa {
-	font-style: normal;
-}
-
-.data-table td:first-child,
-.data-table td:nth-child(2) {
-
-	@media screen and (max-width: 300px) {
-		width: auto;
-	}
-
-	@media screen and (max-width: 767px) {
-		width: 20rem;
-	}
-
-	@media screen and (min-width: 767px) {
-		width: 20rem;
-	}
-
-	@media screen and (min-width: 1024px) {
-		width: 25rem;
-	}
-}
-
-/* fix the table for the sparql querier */
+/* Yasgui styling overrides */
 
 table.dataTable tbody td,
 table.dataTable tbody th {
@@ -65,10 +11,33 @@ table.dataTable tbody th {
 }
 
 .yasgui .controlbar {
-	justify-content: flex-end;
-	margin-bottom: 1rem;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
 }
 
 .yasgui .autocompleteWrapper {
   display: none !important;
+}
+
+.yasgui table.dataTable {
+  width: auto !important;
+}
+
+.yasgui td,
+.yasgui td {
+  word-break: break-word !important;
+  text-align: left;
+}
+
+// Fix metis table borders
+.au-c-data-table__wrapper {
+  border-top: 0;
+
+  .au-c-table__body tr:last-child {
+    border-bottom: 0;
+  }
+
+  .au-c-toolbar--top {
+    border-top: 0;
+  }
 }
