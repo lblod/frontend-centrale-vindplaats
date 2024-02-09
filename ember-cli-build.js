@@ -9,5 +9,20 @@ module.exports = function (defaults) {
     },
   });
 
-  return app.toTree();
+  // Uncomment this to do a non-Embroider build
+  // return app.toTree();
+
+  const { Webpack } = require('@embroider/webpack');
+  return require('@embroider/compat').compatBuild(app, Webpack, {
+    staticAddonTestSupportTrees: true,
+    staticAddonTrees: true,
+    staticHelpers: true,
+    staticModifiers: true,
+    staticComponents: true,
+    // staticEmberSource: true,
+    // splitAtRoutes: ['route.name'], // can also be a RegExp
+    // packagerOptions: {
+    //    webpackConfig: { }
+    // }
+  });
 };
