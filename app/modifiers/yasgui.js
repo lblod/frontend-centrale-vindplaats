@@ -1,5 +1,6 @@
 import { modifier } from 'ember-modifier';
 import Yasgui from '@triply/yasgui';
+import '@triply/yasgui/build/yasgui.min.css';
 import env from '../config/environment';
 
 const defaultQuery =
