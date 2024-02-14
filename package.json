@@ -27,14 +27,8 @@
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
     "test:ember": "ember test"
   },
-  "overrides": {
-    "inputmask": "^5.0.9-beta.45"
-  },
-  "overridesComments": {
-    "inputmask": "5.0.8 has some code that isn't compatible with FastBoot, but it wasn't released in a stable release yet.."
-  },
   "devDependencies": {
-    "@appuniversum/ember-appuniversum": "^2.18.0",
+    "@appuniversum/ember-appuniversum": "^3.1.0",
     "@babel/core": "^7.23.2",
     "@babel/eslint-parser": "^7.22.15",
     "@babel/plugin-proposal-decorators": "^7.23.2",
