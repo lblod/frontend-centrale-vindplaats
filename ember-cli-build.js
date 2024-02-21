@@ -3,11 +3,7 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
-  const app = new EmberApp(defaults, {
-    '@appuniversum/ember-appuniversum': {
-      disableWormholeElement: true,
-    },
-  });
+  const app = new EmberApp(defaults, {});
 
   // Uncomment this to do a non-Embroider build
   // return app.toTree();
