@@ -2,6 +2,7 @@ steps:
   build:
     image: woodpeckerci/plugin-docker-buildx
     settings:
+      dockerfile: Dockerfile.fastboot
       repo: ${CI_REPO}
       tags: latest
     secrets: [ docker_username, docker_password ]
