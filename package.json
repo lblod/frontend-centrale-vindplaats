@@ -28,12 +28,10 @@
     "test:ember": "ember test"
   },
   "overrides": {
-    "inputmask": "^5.0.9-beta.45",
-    "ember-intl": "$ember-intl"
+    "inputmask": "^5.0.9-beta.45"
   },
   "overridesComments": {
-    "inputmask": "5.0.8 has some code that isn't compatible with FastBoot, but it wasn't released in a stable release yet..",
-    "ember-intl": "metis depends on v5, but there weren't any breaking API changes between 5 and 6, so we can install the newer version here"
+    "inputmask": "5.0.8 has some code that isn't compatible with FastBoot, but it wasn't released in a stable release yet.."
   },
   "devDependencies": {
     "@appuniversum/ember-appuniversum": "^2.18.0",
@@ -66,6 +64,7 @@
     "ember-fetch": "^8.1.2",
     "ember-intl": "^6.4.0",
     "ember-load-initializers": "^2.1.2",
+    "ember-metis": "^0.9.0",
     "ember-modifier": "^4.1.0",
     "ember-page-title": "^8.0.0",
     "ember-qunit": "^8.0.1",
@@ -79,7 +78,6 @@
     "eslint-plugin-prettier": "^5.0.1",
     "eslint-plugin-qunit": "^8.0.1",
     "loader.js": "^4.7.0",
-    "metis": "github:redpencilio/ember-metis#v0.8.1",
     "prettier": "^3.0.3",
     "qunit": "^2.20.0",
     "qunit-dom": "^2.0.0",

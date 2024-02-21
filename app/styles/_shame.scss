@@ -28,16 +28,3 @@ table.dataTable tbody th {
   word-break: break-word !important;
   text-align: left;
 }
-
-// Fix metis table borders
-.au-c-data-table__wrapper {
-  border-top: 0;
-
-  .au-c-table__body tr:last-child {
-    border-bottom: 0;
-  }
-
-  .au-c-toolbar--top {
-    border-top: 0;
-  }
-}
