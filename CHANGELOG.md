@@ -1,3 +1,9 @@
+## v0.4.0 (2025-01-20)
+
+#### :rocket: Enhancement
+* [#21](https://github.com/lblod/frontend-centrale-vindplaats/pull/21) [DL-6400] Update to Ember 5.12 ([@Windvis](https://github.com/Windvis))
+* [#20](https://github.com/lblod/frontend-centrale-vindplaats/pull/20) [DL-6401] Enable embroider again ([@Windvis](https://github.com/Windvis))
+
 ## v0.3.1 (2024-02-21)
 
 #### :bug: Bug Fix
