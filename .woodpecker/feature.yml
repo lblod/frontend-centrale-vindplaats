@@ -2,7 +2,7 @@ steps:
   build-and-push:
     image: woodpeckerci/plugin-docker-buildx
     settings:
-      repo: ""
+      repo: ${CI_REPO}
       tags: "feature-${CI_COMMIT_BRANCH##feature/}"
       username:
         from_secret: docker_username
