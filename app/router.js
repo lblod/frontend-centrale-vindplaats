@@ -1,6 +1,6 @@
 import EmberRouter from '@ember/routing/router';
 import config from 'frontend-centrale-vindplaats/config/environment';
-import { fallbackRoute } from 'ember-metis';
+import { fallbackRoute, externalRoute } from 'ember-metis';
 
 export default class Router extends EmberRouter {
   location = config.locationType;
@@ -11,6 +11,7 @@ Router.map(function () {
   this.route('sparql');
   this.route('view', function () {});
   fallbackRoute(this);
+  externalRoute(this);
 
   this.route('legaal', function () {
     this.route('toegankelijkheidsverklaring');
